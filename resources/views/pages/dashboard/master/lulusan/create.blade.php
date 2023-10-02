@@ -23,7 +23,7 @@
                 @enderror
             </div>
             <div class="mb-3">
-                <label for="deskripsi" class="form-label">Program</label>
+                <label for="deskripsi" class="form-label">Deskripsi</label>
                 <textarea name="deskripsi" id="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" rows="3">{{ old('deskripsi') }}</textarea>
                 @error('deskripsi')
                     <div class="invalid-feeback text-danger fst-italic">
