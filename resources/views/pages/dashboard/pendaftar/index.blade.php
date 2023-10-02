@@ -73,7 +73,8 @@
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',
                     cancelButtonColor: '#d33',
-                    confirmButtonText: 'Ya, hapus!'
+                    confirmButtonText: 'Ya, hapus!',
+                    cancelButtonText: 'Tidak'
                 }).then((result) => {
                     if (result.isConfirmed) {
                         const id = $(this).data('id');

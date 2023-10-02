@@ -23,7 +23,7 @@ class LulusanController extends Controller
     public function create()
     {
         return view('pages.dashboard.master.lulusan.create', [
-            'title' => 'Tambah program'
+            'title' => 'Tambah Data Lulusan'
         ]);
     }
 
@@ -35,7 +35,6 @@ class LulusanController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
         // validasi data yang diinputkan dari form
         $validateData = $request->validate([
             'nama' => 'required|unique:lulusans,nama',
